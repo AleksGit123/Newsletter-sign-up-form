@@ -1,0 +1,156 @@
+body {
+    min-height: 100dvh;
+    background-color: hsl(234, 29%, 20%);
+    display: grid;
+    place-items: center;
+
+}
+
+*::selection {
+    color: hsl(4, 100%, 67%);
+
+}
+
+.font {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* main tag */
+.main_tag {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    background-color: hsl(0, 0%, 100%);
+    width: min(95%, 892px);
+    height: 593px;
+    border-radius: 30px;
+    padding: 20px 20px 20px 0;
+}
+
+/* left section for verification */
+
+.form_section {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 55%;
+    height: 100%;
+    padding: 80px 70px 80px 70px;
+}
+
+.stay_updated {
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(234, 29%, 20%);
+}
+
+.left_section_p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: hsl(234, 29%, 20%);
+    text-align: justify;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    align-items: start;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+li::before {
+    content: url("../images/icon-list.svg");
+    text-align: center;
+}
+
+.email_form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.email_label {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 16px;
+    color: hsla(234, 29%, 20%, 0.758);
+    z-index: 100;
+    background-color: #FFFFFF;
+    transition: .3s;
+
+}
+
+input {
+    position: relative;
+    width: 100%;
+    border: 2px solid hsl(235, 18%, 26%);
+    outline: none;
+    font-size: 16px;
+    padding: 15px 0 15px 15px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+input:hover {
+    border-color: hsl(4, 100%, 67%);
+}
+
+input:focus+.email_label {
+    top: -6px;
+    left: 8px;
+    color: hsl(234, 29%, 20%);
+    padding-inline: 3px;
+    font-size: 13px;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    padding-block: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    color: hsl(234, 29%, 20%);
+    transform: scale(1.1);
+}
+
+
+/* section for image */
+.image_section {
+    background-image: url("../images//illustration-sign-up-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}

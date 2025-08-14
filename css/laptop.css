@@ -1,0 +1,21 @@
+@media(max-width:895px) {
+
+
+    .form_section {
+        padding: 40px;
+    }
+
+    .stay_updated {
+        font-size: 40px;
+    }
+
+    .image_section {
+        padding: 10px;
+    }
+    button{
+        font-size: 15px;
+    }
+    input{
+        font-size: 15px;
+    }
+}

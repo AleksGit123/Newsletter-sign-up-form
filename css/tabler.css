@@ -1,0 +1,31 @@
+@media(max-width:600px) {
+    .main_tag {
+        padding: 15px 15px 15px 0;
+    }
+
+    .form_section {
+        padding: 25px;
+
+    }
+
+    .stay_updated {
+        font-size: 32px;
+    }
+
+    .left_section_p {
+        font-size: 15px;
+        /* text-align: left; */
+    }
+
+
+
+    li {
+        font-size: 14px;
+        column-gap: 7px;
+    }
+
+    button {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}

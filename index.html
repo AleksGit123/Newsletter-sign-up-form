@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="css/laptop.css">
     <link rel="stylesheet" href="css/tabler.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 
     <!-- title favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- script link -->
     <script defer src="script.js"></script>
     <title>NewSLetter</title>
 </head>
@@ -44,9 +46,10 @@
             </ul>
 
             <form action="#" class="email_form">
-                <input type="email" name="email" id="email" class="email_input font">
                 <label for="email" class="email_label font">Email address</label>
-                <button type="submit" class="font">Subscribe to monthly newsletter</button>
+                <input type="email" name="email" id="email" class="email_input font">
+                <label for="email" class="error_label font">Valid email required</label>
+                <button type="submit" class="submit_btn font">Subscribe to monthly newsletter</button>
             </form>
 
         </section>

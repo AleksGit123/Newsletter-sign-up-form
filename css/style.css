@@ -91,15 +91,11 @@ li::before {
 }
 
 .email_label {
-    position: absolute;
-    top: 18px;
-    left: 15px;
-    font-size: 16px;
-    color: hsla(234, 29%, 20%, 0.758);
-    z-index: 100;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(234, 29%, 20%);
     background-color: #FFFFFF;
     transition: .3s;
-
 }
 
 input {
@@ -111,19 +107,25 @@ input {
     padding: 15px 0 15px 15px;
     border-radius: 8px;
     transition: .3s;
+    z-index: 1000;
+}
+
+.error_label {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(4, 100%, 67%);
+    top: 45px;
+    opacity: 0;
+    right: 0;
+    transition: .5s;
 }
 
 input:hover {
-    border-color: hsl(4, 100%, 67%);
+    transform: translateY(-3px);
 }
 
-input:focus+.email_label {
-    top: -6px;
-    left: 8px;
-    color: hsl(234, 29%, 20%);
-    padding-inline: 3px;
-    font-size: 13px;
-}
+
 
 button {
     width: 100%;
